@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F0F0F0;
+}
+
+.login-page {
+    width: 360px;
+    padding: 1% 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form h2 {
+    margin: 0 0 20px;
+    color: #4CAF50;
+    font-size: 24px;
+}
+
+.form input, .form textarea {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form textarea {
+    height: 80px;
+    resize: none;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #86B817;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form button:hover,.form button:active {
+    background: #86B817;
+}
+</style> 
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="booking-form" action="book" method="post">
+                <h2>Booking Form</h2>
+                <input type="text" name="name" placeholder="Full Name"/>
+                <input type="email" name="email" placeholder="Email"/>
+                <input type="tel" name="phone" placeholder="Phone"/>
+                <input type="text" name="pnr" placeholder="PNR No."/>
+                <input type="text" name="from" placeholder="From"/>
+                <input type="text" name="to" placeholder="To"/>
+                <input type="date" name="date" placeholder="Date of Booking"/>
+                <input type="time" name="time" placeholder="Time of Booking"/>
+                <input type="number" name="person" placeholder="Number of Persons" min="1"/>
+                <textarea name="note" placeholder="Special Requests or Notes"></textarea>
+                <button>Book Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
